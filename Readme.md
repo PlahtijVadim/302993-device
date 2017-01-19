@@ -1,7 +1,6 @@
 # Личный проект «Девайс»
 
 * Студент: [Demid Miroshnichenko](https://up.htmlacademy.ru/htmlcss/16/user/302993).
-* Наставник: `Неизвестно`.
 
 ---
 
