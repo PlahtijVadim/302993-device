@@ -12,10 +12,11 @@
       <div class="container">
         <div class="header-user-block">
           <form class="main-header-search" action="https://echo.htmlacademy.ru" method="get">
-            <input type="text" name="search" value="" placeholder="Поиск по сайту">
+            <input type="search" name="search" placeholder="Поиск по сайту">
+            <input type="submit" value="Найти">
           </form>
           <ul>
-            <li><a class="login" href="#">Вход</a></li>
+            <li><a class="login" href="#">Войти</a></li>
             <li><a class="compare" href="#">Сравнить</a></li>
             <li><a class="basket" href="#">Корзина</a></li>
           </ul>
@@ -38,45 +39,95 @@
         </nav>
       </div>
     </header>
-    <div class="slider">
-      <section class="slider-content">
+    <section class="slider">
+      <!-- Слайд палки для селфи -->
+      <article class="slider-content">
         <img src="http://placehold.it/390x490" width="390" height="490" alt="Палка для селфи">
-        <span>Делай селфи,<br>
+        <div class="slider-numbers">01</div>
+        <span class="slider-slogan">Делай селфи,<br>
         как Бен Стиллер!</span>
 
         <p class="slider-description">
-          Самая длинная палка для селфи доступна в нашем магазине.
+          Самая длинная палка для селфи доступна в нашем магазине.<br>
           Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.
+        </p>
+
+        <a class="btn" href="#">Подробнее</a>
+
+        <section class="slider-characteristics">
+          <div class="slider-characteristics-item">
+            <b>8.5 м</b>
+            <p>Длина палки</p>
+          </div>
+          <div class="slider-characteristics-item">
+            <b>5 кг</b>
+            <p>Вес палки</p>
+          </div>
+          <div class="slider-characteristics-item">
+            <b>Карбон</b>
+            <p>Материал</p>
+          </div>
+        </section>
+      </article>
+      <!-- Слайд фитнесс-браслета -->
+      <article class="slider-content">
+        <img src="http://placehold.it/390x490" width="390" height="490" alt="Фитнесс-браслет">
+        <div class="slider-numbers">02</div>
+        <span class="slider-slogan">Худеем,<br>
+        правильно!</span>
+
+        <p class="slider-description">
+          Мотивирующие фитнесс-браслеты помогут найти в себе силы<br>
+          не пропускать занятия и соблюдать диету.
         </p>
 
         <a class="more-btn" href="#">Подробнее</a>
 
-        <table class="slider-characteristics">
-          <tr>
-            <th>8.5м</th>
-            <th>5кг</th>
-            <th>Карбон</th>
-          </tr>
-          <tr>
-            <td>Длина палки</td>
-            <td>Вес палки</td>
-            <td>Материал</td>
-          </tr>
-        </table>
-      </section>
+        <section class="slider-characteristics">
+          <div class="slider-characteristics-item">
+            <b>48 часов</b>
+            <p>Без подзарядки</p>
+          </div>
+        </section>
+      </article>
+      <!-- Слайд квадрокоптера -->
+      <article class="slider-content">
+        <img src="http://placehold.it/390x490" width="390" height="490" alt="Квадрокоптер">
+        <div class="slider-numbers">03</div>
+        <span class="slider-slogan">Порхает как бабочка,<br>
+        жалит как пчела!</span>
 
-      <button class="btn first-slider" type="button"><span></span></button>
-      <button class="btn second-slider" type="button"><span></span></button>
-      <button class="btn third-slider" type="button"><span></span></button>
-    </div>
-    <div class="popular">
+        <p class="slider-description">
+          Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+           мощным лазером, замаскированным под стандартную камеру.
+        </p>
+
+        <a class="more-btn" href="#">Подробнее</a>
+
+        <section class="slider-characteristics">
+          <div class="slider-characteristics-item">
+            <b>800 м</b>
+            <p>Дальность полета</p>
+          </div>
+          <div class="slider-characteristics-item">
+            <b>50 м</b>
+            <p>Радиус поражения</p>
+          </div>
+        </section>
+      </article>
+
+      <button class="btn first-slider" type="button"></button>
+      <button class="btn second-slider" type="button"></button>
+      <button class="btn third-slider" type="button"></button>
+    </section>
+    <nav class="popular">
       <ul>
         <li>
           <a href="#">
             <div class="popular-img">
               <img width="160" height="160" alt="Виртуальная реальность" src="http://placehold.it/160x160">
             </div>
-            <span class="popular-title">Виртуальная реальность</span>
+            <p class="popular-title">Виртуальная реальность</p>
           </a>
         </li>
         <li>
@@ -84,7 +135,7 @@
             <div class="popular-img">
               <img width="160" height="160" alt="Моноподы для селфи" src="http://placehold.it/160x160">
             </div>
-            <span class="popular-title">Моноподы для селфи</span>
+            <p class="popular-title">Моноподы для селфи</p>
           </a>
         </li>
         <li>
@@ -92,7 +143,7 @@
             <div class="popular-img">
               <img width="160" height="160" alt="Экшн-камеры" src="http://placehold.it/160x160">
             </div>
-            <span class="popular-title">Экшн-камеры</span>
+            <p class="popular-title">Экшн-камеры</p>
           </a>
         </li>
         <li>
@@ -100,7 +151,7 @@
             <div class="popular-img">
               <img width="160" height="160" alt="Фитнесс браслеты" src="http://placehold.it/160x160">
             </div>
-            <span class="popular-title">Фитнесс браслеты</span>
+            <p class="popular-title">Фитнесс браслеты</p>
           </a>
         </li>
         <li>
@@ -108,7 +159,7 @@
             <div class="popular-img">
               <img width="160" height="160" alt="Умные часы" src="http://placehold.it/160x160">
             </div>
-            <span class="popular-title">Умные часы</span>
+            <p class="popular-title">Умные часы</p>
           </a>
         </li>
         <li>
@@ -116,33 +167,79 @@
             <div class="popular-img">
               <img width="160" height="160" alt="Квадрокоптеры" src="http://placehold.it/160x160">
             </div>
-            <span class="popular-title">Квадрокоптеры</span>
+            <p class="popular-title">Квадрокоптеры</p>
           </a>
         </li>
       </ul>
-    </div>
+    </nav>
     <div class="services">
-      <button class="btn delivery" type="button">Доставка</button>
-      <button class="btn warranty" type="button">Гарантия</button>
-      <button class="btn credit" type="button">Кредит</button>
+      <button class="btn" type="button">Доставка</button>
+      <button class="btn" type="button">Гарантия</button>
+      <button class="btn" type="button">Кредит</button>
 
-      <section class="services-description">
-        <h2>Доставка</h2>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-          совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
-          этаж.
-        </p>
+      <section class="services-slider">
+        <article class="services-slider-content">
+          <h2>Доставка</h2>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему<br>
+            подъезду совершенно бесплатно! Ведь мы неплохо<br>
+            заработаем, поднимая его на ваш этаж.
+          </p>
+
+          <div class="services-slider-img">
+            <img width="140" height="170" src="http://placehold.it/140x170" alt="Доставка">
+          </div>
+        </article>
+
+        <article class="services-slider-content">
+          <h2>Гарантия</h2>
+          <p>Если из-за возгарания купленного у нас товара у вас сгорит<br>
+            дом - не переживайте, мы выдадим вам новый.<br>
+            Товар, не дом, конечно же.
+          </p>
+
+          <div class="services-slider-img">
+            <img width="140" height="170" src="http://placehold.it/140x170" alt="Доставка">
+          </div>
+        </article>
+
+        <article class="services-slider-content">
+          <h2>Кредит</h2>
+          <p>Залезть в долговую яму стало проще! Кредитные<br>
+            консультанты подберут для вас наиболее выгодные<br>
+            условия кредита. Выгодные для нашего банка, разумеется.
+          </p>
+
+          <div class="services-slider-img">
+            <img width="140" height="170" src="http://placehold.it/140x170" alt="Доставка">
+          </div>
+        </article>
       </section>
     </div>
     <div class="logotypes">
-      <div><img src="http://placehold.it/140x80" width="140" height="80" alt="dji"></div>
-      <div><img src="http://placehold.it/140x80" width="140" height="80" alt="SP GADGETS"></div>
-      <div><img src="http://placehold.it/140x80" width="140" height="80" alt="GoPro"></div>
-      <div><img src="http://placehold.it/140x80" width="140" height="80" alt="Vive"></div>
+      <div>
+        <a target="_blank" href="http://www.dji.com/">
+          <img src="http://placehold.it/140x80" width="140" height="80" alt="dji">
+        </a>
+      </div>
+      <div>
+        <a target="_blank" href="http://www.sp-gadgets.com/">
+          <img src="http://placehold.it/140x80" width="140" height="80" alt="SP GADGETS">
+        </a>
+      </div>
+      <div>
+        <a target="_blank" href="https://gopro.com/">
+          <img src="http://placehold.it/140x80" width="140" height="80" alt="GoPro">
+        </a>
+      </div>
+      <div>
+        <a target="_blank" href="https://www.vive.com/">
+          <img src="http://placehold.it/140x80" width="140" height="80" alt="Vive">
+        </a>
+      </div>
     </div>
     <div class="information">
-      <div class="info">
-        <h3>О нас</h3>
+      <section class="info">
+        <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в
           каждом из нас</p>
 
@@ -155,10 +252,10 @@
           <li>ЖелДорЭкспедиция</li>
         </ul>
 
-        <a class="more-btn" href="#">Подробнее о нас</a>
-      </div>
-      <div class="contact">
-        <h3>Контакты</h3>
+        <a class="btn" href="#">Подробнее о нас</a>
+      </section>
+      <section class="contact">
+        <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
         проверить работоспособность покупки. Всякое бывает.</p>
 
@@ -166,8 +263,8 @@
           <img src="http://placehold.it/560x225" width="560" height="225" alt="Карта">
         </div>
 
-        <a class="more-btn" href="#">Напишите нам</a>
-      </div>
+        <a class="btn" href="#">Напишите нам</a>
+      </section>
     </div>
     <footer class="main-footer">
       <div class="index-logo">
@@ -175,13 +272,13 @@
       </div>
       <div class="footer-user-block">
         <ul>
-          <li><a class="login" href="#">Вход</a></li>
+          <li><a class="login" href="#">Войти</a></li>
           <li><a class="compare" href="#">Сравнить</a></li>
           <li><a class="basket" href="#">Корзина</a></li>
         </ul>
       </div>
       <div class="footer-contacts-navigation">
-        <span>г. Москва, ул. Строителей, 15</span>
+        <p>г. Москва, ул. Строителей, 15</p>
         <nav class="footer-navigation">
           <ul>
             <li>
@@ -195,7 +292,7 @@
             </li>
           </ul>
         </nav>
-        <span>Тел.: +7 (495) 495-95-95</span>
+        <p>Тел.: +7 (495) 495-95-95</p>
       </div>
       <section class="footer-social">
         <span></span>
@@ -204,10 +301,28 @@
         <a class="social-btn social-btn-twit" href="#">Твиттер</a>
       </section>
       <section class="footer-copyright">
-        <a href="№">
-          <img width="30" height="40" src="http://placehold.it/30x40">
+        <a href="#">
+          <p>Сделано HTML-академией</p>
         </a>
       </section>
     </footer>
+
+    <!-- Pop up write us -->
+    <div class="write-us-popup">
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>Ваше имя:<br>
+          <input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p>Ваше e-mail:<br>
+          <input type="text" name="email" value="" placeholder="Для отправки ответа">
+        </p>
+        <p>Текст письма:<br>
+          <textarea rows="100" cols="10">В свободной форме</textarea>
+        </p>
+
+        <button class="btn" type="submit">Отправить</button>
+        <button class="cross" type="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
