@@ -3,3 +3,25 @@ body {
   color: #444444;
   font-family: "Open Sans";
 }
+
+.content-title {
+  font-size: 47px;
+  color: #000000;
+  font-family: "Gilroy";
+  font-weight: bold;
+}
+
+.filter-title {
+  font-size: 16px;
+  color: #000000;
+  font-family: "Gilroy";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.item-title {
+  font-size: 18px;
+  color: #000000;
+  font-family: "Gilroy";
+  font-weight: bold;
+}
