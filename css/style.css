@@ -1029,7 +1029,7 @@ a.more-to-less  {
 .catalog-content-nav .catalog-prev,
 .catalog-content-nav .catalog-pagination a,
 .catalog-content-nav .catalog-next  {
-  display: inline-flex;
+  display: inline-block;
   font-size: 18px;
   font-family: "Gilroy";
   font-weight: 800;
@@ -1041,7 +1041,7 @@ a.more-to-less  {
 
 .catalog-content-nav a.catalog-prev,
 .catalog-content-nav a.catalog-next {
-  display: inline-table;
+  display: inline-block;
   height: 70px;
   width: 160px;
   border: 0;
