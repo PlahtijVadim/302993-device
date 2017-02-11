@@ -72,7 +72,6 @@ body {
 
 .header-user-block {
   display: flex;
-
 }
 
 .main-header-search {
@@ -96,6 +95,7 @@ body {
   border: 0;
   width: 110px;
   background-color: #FFE27F;
+  opacity: 0.3;
 }
 
 .main-header-search input[type="search"]::-webkit-input-placeholder,
@@ -116,22 +116,34 @@ body {
   padding: 0;
 }
 
-.user-block li {
+.username {
+  font-weight: 300;
+  line-height: 36px;
+  color: #000000;
+  margin-right: 20px;
+}
+
+.logout {
   display: inline-block;
+  width: 5px;
+  height: 18px;
+  /*background: #FFE27F url("../img/spritesheet.png") no-repeat;
+  background-position: -538px -7px;*/
 }
 
-.user-block li:nth-child(2) {
-  margin-left: 70px;
+.user-block .logout {
+  opacity: 0.3;
 }
 
-.user-block li:nth-child(3) {
-  margin-left: 70px;
-}
-
-.user-block a {
+.user-block a,
+.shop-activity a {
   color: #000000;
   font-weight: 300;
   text-decoration: none;
+}
+
+.shop-activity a:nth-child(2) {
+
 }
 
 .user-block .login {
@@ -151,6 +163,17 @@ body {
   background: #FFE27F url("../img/spritesheet.png") no-repeat;
   background-position: -74px -7px;
 }
+
+.user-block .compare::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 18px;
+    padding-left: 20px;
+    background: #FFE27F url("../img/spritesheet.png") no-repeat;
+    background-position: -74px -1px;
+}
+
 
 .user-block .basket {
   display: inline-block;
@@ -230,11 +253,12 @@ body {
 .slider-image img {
   display: block;
   margin: 0 auto;
+  margin-top: -30px;
 }
 
 .slider-container {
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-wrap: wrap;*/
   width: 560px;
   margin-left: 40px;
 }
@@ -263,7 +287,8 @@ body {
 
 .slider-btn {
   display: flex;
-  width: 80px;
+  padding: 0;
+  /*width: 80px;*/
   height: 10px; /* не уверен, что верно, скорее костыль*/
   margin-left: auto;
   margin-right: 80px;
@@ -279,6 +304,7 @@ body {
   border-radius: 10px;
   margin-left: auto;
   margin-right: 23px;
+  padding: 0;
   cursor: pointer;
 }
 
@@ -534,6 +560,8 @@ body {
 }
 
 .footer-container {
+  display: flex;
+  flex-wrap: wrap;
   width: 1160px;
   margin: 0 auto;
   padding-top: 65px;
@@ -552,7 +580,7 @@ svg желтого цвета в css и поменять позицию расп
 }
 
 .footer-user-block {
-  min-width: 355px;
+  min-width: 55px;
   margin-left: 640px;
 }
 
@@ -560,7 +588,8 @@ svg желтого цвета в css и поменять позицию расп
   display: inline-block;
 }
 
-.footer-user-block a {
+.footer-user-block a,
+.footer-shop-activity a {
   font-size: 15px;
   line-height: 36px;
   font-family: "Open Sans";
@@ -569,14 +598,14 @@ svg желтого цвета в css и поменять позицию расп
   text-decoration: none;
 }
 
-.footer-user-block .login {
+/*.footer-user-block .logout {
   display: inline-block;
   width: 5px;
   height: 18px;
   padding-left: 25px;
   background: #444444 url("../img/spritesheet.png") no-repeat;
   background-position: -571px -7px;
-}
+}*/
 
 .footer-user-block .compare {
   display: inline-block;
@@ -691,6 +720,7 @@ svg желтого цвета в css и поменять позицию расп
 .write-us-popup {
   width: 960px;
   border: 1px dotted #000; /* для удосбтво отображения уюеру когда буду делать тень*/
+  margin-
 }
 
 /* пока так реализовал, потом сделаю cо спрайтом */
@@ -779,7 +809,7 @@ svg желтого цвета в css и поменять позицию расп
     ========================================= */
 
 .catalog-content {
-
+  display: flex;
 }
 
 .catalog-item-name-block {
@@ -805,8 +835,17 @@ svg желтого цвета в css и поменять позицию расп
   line-height: 36px;
   color: #000000;
   text-decoration: none;
+  opacity: 0.3;
 }
 
+.nav-arrow-icon {
+  display: inline-block;
+  width: 4px;
+  height: 7px;
+  margin: 0 17px;
+  background: url("../img/spritesheet.png") no-repeat;
+  background-position: -346px -10px;
+}
 /* =============================
       CATALOG-CONTENT-FILTER
    ============================= */
@@ -849,27 +888,71 @@ svg желтого цвета в css и поменять позицию расп
   text-transform: uppercase;
 }
 
+.sort-block a {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000000;
+}
 
+.sort-block li:nth-child(2) {
+  margin-left: 30px;
+}
 
+.sort-block li:nth-child(3) {
+  margin-left: 32px;
+}
 
+.sort-block li:nth-child(4) {
+  margin-left: 214px;
 
+}
 
+.sort-block li:nth-child(5) {
+  margin-left: 26px;
+}
 
+a.less-to-more {
+  display: inline-block;
+  font-size: 0px;
+  width: 19px;
+  height: 19px;
+  background: url("../img/spritesheet.png") no-repeat;
+  background-position: -443px -1px;
+  cursor: pointer;
+  opacity: 0.3;
+}
 
+a.more-to-less  {
+  display: inline-block;
+  font-size: 0px;
+  width: 19px;
+  height: 19px;
+  background: url("../img/spritesheet.png") no-repeat;
+  background-position: -406px -10px;
+  cursor: pointer;
+}
 
 .filter-column {
-
+  width: 32.5%;
   background-color: #f0f0f0;
   color: #000000;
   margin-left: auto;
 }
 
+.filter-block {
+  padding-left: 45px;
+}
+
+.sort-column {
+  width: 67.5%;
+}
 
 
 
 .catalog-filters {
   width: 200px;
-  margin-left: auto;
+  padding-left: 45px;
 }
 
 
@@ -883,9 +966,25 @@ svg желтого цвета в css и поменять позицию расп
 .catalog-content-items {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
-  margin-left: 50px;
+  margin-top: 70px;
+  margin-left: 70px;
   width: 832px;
+}
+
+.catalog-content-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
+  margin-right: 40px;
+  margin-bottom: 45px;
+}
+
+.catalog-content-item a {
+  font-size: 18px;
+  color: #000000;
+  font-family: "Gilroy";
+
+  text-decoration: none;
 }
 
 .result-sort {
@@ -898,12 +997,70 @@ svg желтого цвета в css и поменять позицию расп
 }
 
 .result-sort .filter-title {
-  margin-left: 72px;
+  margin-left: 70px;
+}
+
+.title-price-container {
+    vertical-align: baseline;
+
 }
 
 .item-title {
+  display: inline-block;
+  width: 260px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.item-price {
+  display: inline-block;
+  padding-left: auto;
+}
+
+.catalog-content-nav {
+  display: flex;
+  width: 760px;
+  height: 70px;
+  margin-left: 70px;
+  margin-bottom: 70px;
+  background-color: #f0f0f0;
+}
+
+.catalog-content-nav .catalog-prev,
+.catalog-content-nav .catalog-pagination a,
+.catalog-content-nav .catalog-next  {
   font-size: 18px;
-  color: #000000;
   font-family: "Gilroy";
-  font-weight: bold;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog-prev,
+.catalog-next {
+  height: 70px;
+  min-width: 160px;
+  border: 0;
+}
+
+.catalog-next {
+
+}
+
+.catalog-pagination {
+  display: inline-block;
+  height: 70px;
+  margin: auto;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.catalog-pagination a {
+  padding-right: 23px;
+}
+
+.catalog-pagination a:nth-child(n + 2) {
+  opacity: 0.3;
 }
