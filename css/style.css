@@ -121,15 +121,16 @@ body {
 
 .user-block {
   position: relative;
-  width: 270px;
+  width: 260px;
   margin-top: auto;
   margin-left: auto;
   margin-bottom: auto;
 }
 
 .shop-activity {
-  width: 220px;
+  width: 210px;
   margin: auto 0;
+  margin-left: 10px;
 }
 
 .username {
@@ -246,16 +247,16 @@ body {
   position: relative;
 }
 
-.main-navigation li:nth-child(2) {
-  margin-left: 290px;
+.main-navigation .delivery {
+  margin-left: 320px;
 }
 
-.main-navigation li:nth-child(3) {
+.main-navigation .warranty {
   margin-left: 40px;
 }
 
-.main-navigation li:nth-child(4) {
-  margin-left: 115px;
+.main-navigation .contacts {
+  margin-left: 111px;
 }
 
 
@@ -401,10 +402,6 @@ body {
   line-height: 20px;
   font-weight: 300;
   color: #444444;
-}
-
-.slider-characteristics-item:nth-child(2) {
-  /*width: 140px; /* или лучше через flex-shrink: ??? */*/
 }
 
 /* отключаю элемента */
@@ -554,19 +551,19 @@ body {
   margin-right: 40px;
 }
 
-.company-logo:nth-child(1) img:hover {
+.dji img:hover {
   background-image: url("../img/logo-1.png");
 }
 
-.company-logo:nth-child(2) img:hover {
+.sp-gadgets img:hover {
   background-image: url("../img/logo-2.png");
 }
 
-.company-logo:nth-child(3) img:hover {
+.gopro img:hover {
   background-image: url("../img/logo-3.png");
 }
 
-.company-logo:nth-child(4) img:hover {
+.vive img:hover {
   background-image: url("../img/logo-4.png");
 }
 
@@ -648,7 +645,6 @@ body {
 
 .footer-container .index-logo {
   width: 164px;
-  height: 36px;
   font-size: 48px;
   font-family: "Gilroy";
   font-weight: 800;
@@ -658,8 +654,8 @@ body {
 
 .footer-user-block {
   position: relative;
-  min-width: 55px;
-  margin-left: 640px;
+  min-width: 50px;
+  margin-left: auto;
 }
 
 .footer-user-block a,
@@ -674,6 +670,8 @@ body {
 
 .footer-shop-activity {
   position: relative;
+  width: 197px;
+  margin-left: 64px;
 }
 
 /***************************************************************/
@@ -691,11 +689,15 @@ body {
   background-position: -571px -7px;
 }
 
+.footer-shop-activity .compare {
+  margin-right: 65px;
+}
+
 .footer-shop-activity .compare::before {
   content: "";
   position: absolute;
-  top: 10px;
-  left: -1px;
+  top: 15px;
+  left: -25px;
   width: 13px;
   height: 10px;
   background: #444444 url("../img/spritesheet.png") no-repeat;
@@ -705,8 +707,8 @@ body {
 .footer-shop-activity .basket::before {
   content: "";
   position: absolute;
-
-  left: 23px;
+  top: 10px;
+  left: 115px;
 
   width: 13px;
   height: 17px;
@@ -719,6 +721,7 @@ body {
 .footer-contacts-navigation {
   display: flex;
   width: 1160px;
+  margin-top: 43px;
 }
 
 .footer-navigation {
@@ -727,8 +730,20 @@ body {
   margin-right: auto;
 }
 
+.footer-navigation ul {
+  padding: 0;
+}
+
 .footer-navigation li {
   display: inline-block;
+}
+
+.footer-navigation .delivery {
+  margin-right: 35px;
+}
+
+.footer-navigation .warranty {
+  margin-right: 45px;
 }
 
 .footer-navigation a {
@@ -738,6 +753,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .footer-social-copyright {
@@ -751,36 +767,31 @@ body {
 .social-icons {
   display: flex;
   margin-left: auto;
+  margin-right: -43px;
 }
 
 .social-btn {
   display: inline-block;
   font-size: 0px;
-  width: 43px;
-  height: 43px;
-  margin: 0 2px;
-  background-color: #ffffff;
+  margin-right: 15px;
   opacity: 0.3;
 }
 
-/* Facebook */
-.social-btn:nth-child(1) {
+.facebook-icon {
   background: #444444 url("../img/spritesheet.png") no-repeat;
   width: 43px;
   height: 43px;
   background-position: -134px -5px;
 }
 
-/* Instagram */
-.social-btn:nth-child(2) {
+.instagram-icon {
   background: #444444 url("../img/spritesheet.png") no-repeat;
   width: 43px;
   height: 43px;
   background-position: -287px -5px;
 }
 
-/* Twitter */
-.social-btn:nth-child(3) {
+.twitter-icon {
   background: #444444 url("../img/spritesheet.png") no-repeat;
   width: 43px;
   height: 43px;
@@ -798,7 +809,7 @@ body {
 .copyright a {
   display: inline-block;
   margin: 0;
-  width: 43px;
+  width: 28px;
   height: 43px;
   background: #444444 url("../img/spritesheet.png") no-repeat;
   background-position: -193px -5px;
@@ -993,19 +1004,19 @@ body {
   color: #000000;
 }
 
-.sort-type li:nth-child(2) {
+.sort-type .by-type {
   margin-left: 30px;
 }
 
-.sort-type li:nth-child(3) {
+.sort-type .by-popularity {
   margin-left: 32px;
 }
 
-.sort-type li:nth-child(4) {
+.sort-type .less-to-more {
   margin-left: 214px;
 }
 
-.sort-type li:nth-child(5) {
+.sort-type .more-to-less {
   margin-left: 26px;
 }
 
