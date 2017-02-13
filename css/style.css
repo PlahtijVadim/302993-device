@@ -58,7 +58,18 @@ body {
 
 /* отключаю элемента */
 .main-header .index-logo {
-  display: none;
+  position: absolute;
+  font-size: 48px;
+  font-family: "Gilroy";
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: -25px;
+  margin-left: 60px;
+}
+
+.main-header .index-logo a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .container {
@@ -77,7 +88,8 @@ body {
 .main-header-search {
   display: flex;
   min-width: 55px;
-  align-self: flex-start;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .main-header-search input[type="submit"] {
@@ -88,7 +100,7 @@ body {
   height: 23px;
   background: #FFE27F url("../img/spritesheet.png") no-repeat;
   background-position: -370px -8px;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .main-header-search input[type="search"] {
@@ -108,27 +120,40 @@ body {
 }
 
 .user-block {
-  width: 500px;
-  align-self: flex-end;
-  margin-top: 0;
+  position: relative;
+  width: 270px;
+  margin-top: auto;
   margin-left: auto;
-  margin-bottom: 0;
-  padding: 0;
+  margin-bottom: auto;
+}
+
+.shop-activity {
+  width: 220px;
+  margin: auto 0;
 }
 
 .username {
-  font-weight: 300;
+  width: 135px;
   line-height: 36px;
   color: #000000;
-  margin-right: 20px;
+  margin-right: 15px;
+}
+
+.username::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -25px;
+
+  width: 13px;
+  height: 12px;
+  background: #FFE27F url("../img/spritesheet.png") no-repeat;
+  background-position: -538px -9px;
 }
 
 .logout {
-  display: inline-block;
-  width: 5px;
+  width: 45px;
   height: 18px;
-  /*background: #FFE27F url("../img/spritesheet.png") no-repeat;
-  background-position: -538px -7px;*/
 }
 
 .user-block .logout {
@@ -142,44 +167,65 @@ body {
   text-decoration: none;
 }
 
-.shop-activity a:nth-child(2) {
-
-}
-
 .user-block .login {
   display: inline-block;
-  width: 5px;
+  position: relative;
+
+  width: 50px;
   height: 18px;
-  padding-left: 25px;
+}
+
+.user-block .login::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -24px;
+
+  width: 13px;
+  height: 20px;
   background: #FFE27F url("../img/spritesheet.png") no-repeat;
   background-position: -538px -7px;
 }
 
-.user-block .compare {
+.shop-activity .compare {
   display: inline-block;
-  width: 5px;
+  position: relative;
+
+  width: 80px;
   height: 18px;
   padding-left: 20px;
-  background: #FFE27F url("../img/spritesheet.png") no-repeat;
-  background-position: -74px -7px;
 }
 
-.user-block .compare::before {
+.shop-activity .compare::before {
     content: "";
-    display: inline-block;
-    width: 5px;
-    height: 18px;
-    padding-left: 20px;
+    position: absolute;
+    top: 4px;
+    left: -1px;
+
+    width: 13px;
+    height: 10px;
     background: #FFE27F url("../img/spritesheet.png") no-repeat;
-    background-position: -74px -1px;
+    background-position: -74px -10px;
 }
 
 
-.user-block .basket {
+.shop-activity .basket {
   display: inline-block;
-  width: 5px;
+  position: relative;
+
+  width: 60px;
   height: 18px;
-  padding-left: 20px;
+  padding-left: 45px;
+}
+
+.shop-activity .basket::before {
+  content: "";
+  position: absolute;
+
+  left: 23px;
+
+  width: 13px;
+  height: 17px;
   background: #FFE27F url("../img/spritesheet.png") no-repeat;
   background-position: -10px -7px;
 }
@@ -229,7 +275,7 @@ body {
 }
 
 /* =============================
-              sLIDER
+              SLIDER
    ============================= */
 
 .slider {
@@ -239,9 +285,17 @@ body {
   margin: 0 auto;
 }
 
+.slider-background {
+  width: 1160px;
+  height: 113px;
+  background-color: #ffe27f;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
 .slider .slider-content {
   display: flex;
-
+  min-width: 1160px;
   padding-bottom: 115px;
 }
 
@@ -253,12 +307,10 @@ body {
 .slider-image img {
   display: block;
   margin: 0 auto;
-  margin-top: -30px;
+  margin-top: -108px;
 }
 
 .slider-container {
-  /*display: flex;
-  flex-wrap: wrap;*/
   width: 560px;
   margin-left: 40px;
 }
@@ -277,6 +329,7 @@ body {
   font-family: "Gilroy";
   font-weight: 800;
   color: #000000;
+  margin-top: -32px;
 }
 
 .slider-description {
@@ -285,10 +338,16 @@ body {
   color: #444444;
 }
 
+.slider-container .nav-container {
+  display: flex;
+  min-width: 460px;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+
 .slider-btn {
   display: flex;
   padding: 0;
-  /*width: 80px;*/
   height: 10px; /* не уверен, что верно, скорее костыль*/
   margin-left: auto;
   margin-right: 80px;
@@ -298,7 +357,7 @@ body {
 .btn.second-slider,
 .btn.third-slider {
   width: 10px;
-  height: 10px; /* почему то не получается сделать круглой?( )*/
+  height: 10px;
   border: 2px solid #000000;
   background-color: #ffffff;
   border-radius: 10px;
@@ -314,7 +373,6 @@ body {
 }
 
 .slider-characteristics-item {
-  /*width: 160px;*/
   margin-right: 80px;
 }
 
@@ -406,16 +464,15 @@ body {
 }
 
 .services-slide-navigation {
-  display: flex;
-
-  flex-direction: column;
-  justify-content: center;
+  padding-top: 80px;
   border-right: 4px solid #000000; /* наглядный костыль потом уберу*/
   width: 280px;
 }
 
 .services-slide-navigation .btn {
-  margin: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 37px;
 }
 
 /* мне кажется или эта обертка избыточна? */
@@ -435,6 +492,8 @@ body {
 .services-slider-description {
   width: 470px;
 }
+
+
 
 .services-slider-img {
   width: 170px;
@@ -573,19 +632,20 @@ body {
 }
 
 
-/* выключаю логотип, нужно разобраться как сделать
-svg желтого цвета в css и поменять позицию расположения */
 .footer-container .index-logo {
-  width: 165px;
+  width: 164px;
+  height: 36px;
+  font-size: 48px;
+  font-family: "Gilroy";
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffe27f;
 }
 
 .footer-user-block {
+  position: relative;
   min-width: 55px;
   margin-left: 640px;
-}
-
-.footer-user-block li {
-  display: inline-block;
 }
 
 .footer-user-block a,
@@ -598,32 +658,49 @@ svg желтого цвета в css и поменять позицию расп
   text-decoration: none;
 }
 
-/*.footer-user-block .logout {
-  display: inline-block;
-  width: 5px;
-  height: 18px;
-  padding-left: 25px;
-  background: #444444 url("../img/spritesheet.png") no-repeat;
-  background-position: -571px -7px;
-}*/
-
-.footer-user-block .compare {
-  display: inline-block;
-  width: 5px;
-  height: 18px;
-  padding-left: 20px;
-  background: #444444 url("../img/spritesheet.png") no-repeat;
-  background-position: -104px -7px;
+.footer-shop-activity {
+  position: relative;
 }
 
-.footer-user-block .basket {
-  display: inline-block;
-  width: 5px;
-  height: 18px;
-  padding-left: 20px;
+/***************************************************************/
+
+.footer-user-block .login::before,
+.footer-user-block .logout::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -24px;
+
+  width: 13px;
+  height: 20px;
+  background: #444444 url("../img/spritesheet.png") no-repeat;
+  background-position: -571px -7px;
+}
+
+.footer-shop-activity .compare::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -1px;
+  width: 13px;
+  height: 10px;
+  background: #444444 url("../img/spritesheet.png") no-repeat;
+  background-position: -104px -10px;
+}
+
+.footer-shop-activity .basket::before {
+  content: "";
+  position: absolute;
+
+  left: 23px;
+
+  width: 13px;
+  height: 17px;
   background: #444444 url("../img/spritesheet.png") no-repeat;
   background-position: -42px -7px;
 }
+
+/*************************************************************/
 
 .footer-contacts-navigation {
   display: flex;
@@ -808,10 +885,6 @@ svg желтого цвета в css и поменять позицию расп
             CATALOG.HTML / catalog-content
     ========================================= */
 
-.catalog-content {
-  display: flex;
-}
-
 .catalog-item-name-block {
   width: 1160px;
   margin: 0 auto;
@@ -850,21 +923,20 @@ svg желтого цвета в css и поменять позицию расп
       CATALOG-CONTENT-FILTER
    ============================= */
 
-.catalog-head {
+.catalog-content {
   display: flex;
   width: 100%;
 }
 
-.filter-header {
-  width: 32.5%;
-  background-color: #dbdbdb;
+.filter-column {
+  width: calc((100% - 1160px) / 2 + 328px);
+  background-color: #f0f0f0;
   color: #000000;
-  padding: 0;
 }
 
-.sort-header {
-  width: 67.5%;
-  background-color: #f0f0f0;
+.filter-background {
+  height: 70px;
+  background-color: #dbdbdb;
   color: #000000;
   padding: 0;
 }
@@ -886,29 +958,30 @@ svg желтого цвета в css и поменять позицию расп
   font-family: "Gilroy";
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 27px;
+  margin-bottom: 27px;
 }
 
-.sort-block a {
+.sort-type a {
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
   color: #000000;
 }
 
-.sort-block li:nth-child(2) {
+.sort-type li:nth-child(2) {
   margin-left: 30px;
 }
 
-.sort-block li:nth-child(3) {
+.sort-type li:nth-child(3) {
   margin-left: 32px;
 }
 
-.sort-block li:nth-child(4) {
+.sort-type li:nth-child(4) {
   margin-left: 214px;
-
 }
 
-.sort-block li:nth-child(5) {
+.sort-type li:nth-child(5) {
   margin-left: 26px;
 }
 
@@ -933,34 +1006,48 @@ a.more-to-less  {
   cursor: pointer;
 }
 
-.filter-column {
-  width: 32.5%;
-  background-color: #f0f0f0;
-  color: #000000;
-  margin-left: auto;
-}
-
 .filter-block {
-  padding-left: 45px;
+  padding-left: 60px;
 }
 
 .sort-column {
-  width: 67.5%;
+  width: calc((100% - 1160px) / 2 + 832px);
 }
 
+.sort-background {
+  height: 70px;
+  background-color: #f0f0f0;
+}
 
+.filter-contant {
+
+}
 
 .catalog-filters {
   width: 200px;
-  padding-left: 45px;
+  margin-left: auto;
+  margin-right: 68px;
 }
 
+.catalog-filters label {
+  display: block;
+  margin-top: 17px;
+}
 
+.catalog-filters .btn {
+  margin-top: 50px;
+}
 
-.content-column {
-  background-color: #ffffff;
-  color: #000000;
-  margin-right: auto;
+.price-range-filter {
+  margin-top: 70px;
+}
+
+.color-filter {
+  margin-top: 40px;
+}
+
+.bluetooth-filter {
+  margin-top: 40px;
 }
 
 .catalog-content-items {
@@ -983,20 +1070,46 @@ a.more-to-less  {
   font-size: 18px;
   color: #000000;
   font-family: "Gilroy";
-
   text-decoration: none;
 }
 
-.result-sort {
+.dropdown-buttons-content {
+  display: none;
+}
+
+.catalog-content-item.dropdown-buttons {
+  position: relative;
+}
+
+.new-item-in-catalog {
+  display: block;
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-left: 7px;
+  opacity: 0.1;
+}
+
+.img-content-item:hover {
+  opacity: 0.3;
+}
+
+.sort-block {
   margin-right: auto;
 }
 
-.result-sort ul,
-.result-sort li {
+.sort-block ul,
+.sort-block li {
   display: inline-block;
 }
 
-.result-sort .filter-title {
+.sort-block .filter-title {
   margin-left: 70px;
 }
 
@@ -1023,38 +1136,37 @@ a.more-to-less  {
   height: 70px;
   margin-left: 70px;
   margin-bottom: 70px;
-  background-color: #f0f0f0;
-}
-
-.catalog-content-nav .catalog-prev,
-.catalog-content-nav .catalog-pagination a,
-.catalog-content-nav .catalog-next  {
-  display: inline-block;
   font-size: 18px;
   font-family: "Gilroy";
   font-weight: 800;
   color: #000000;
   letter-spacing: 3px;
-  text-decoration: none;
+  background-color: #f0f0f0;
   text-transform: uppercase;
+
 }
 
-.catalog-content-nav a.catalog-prev,
-.catalog-content-nav a.catalog-next {
+.catalog-pagination a {
   display: inline-block;
-  height: 70px;
+  text-decoration: none;
+  padding-right: 23px;
+  opacity: 0.3;
+}
+
+ .catalog-btn {
+  display: inline-block;
   width: 160px;
   border: 0;
-  line-height: 16px;
-  padding: auto 0;
-  box-sizing: border-box;
+  line-height: 70px;
+  color: #000000;
+  text-decoration: none;
 }
 
-.catalog-content-nav a.catalog-prev {
+.catalog-content-nav .prev {
   padding-left: 30px;
 }
 
-.catalog-content-nav a.catalog-next {
+.catalog-content-nav .next {
   padding-left: 55px;
 }
 
@@ -1063,11 +1175,6 @@ a.more-to-less  {
   margin: auto;
   padding-top: 26px;
   padding-bottom: 26px;
-}
-
-.catalog-pagination a {
-  padding-right: 23px;
-  opacity: 0.3;
 }
 
 a.current {
