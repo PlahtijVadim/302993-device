@@ -243,6 +243,7 @@ body {
 
 .main-navigation li {
   display: inline-block;
+  position: relative;
 }
 
 .main-navigation li:nth-child(2) {
@@ -272,6 +273,19 @@ body {
 /* отключаю элемента */
 .main-navigation .dropdown-menu-content {
   display: none;
+}
+
+.dropdown-menu::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 220px;
+
+  width: 16px;
+  height: 16px;
+  background: #ffe27f url("../img/sprite-crosses.png") no-repeat;
+  background-position: -53px -10px;
+
 }
 
 /* =============================
@@ -797,12 +811,13 @@ body {
 .write-us-popup {
   width: 960px;
   border: 1px dotted #000; /* для удосбтво отображения уюеру когда буду делать тень*/
-  margin-
 }
 
 /* пока так реализовал, потом сделаю cо спрайтом */
 .cross-button {
   display: block;
+  position: relative;
+
   font-size: 18px;
   font-weight: 800;
   letter-spacing: 3px;
@@ -815,13 +830,22 @@ body {
   width: 54px;
   height: 54px;
   border-radius: 26px;
-  background-color: #ffe27f;
+  background-color: #ffc600;
   cursor: pointer;
 }
 
-/*.cross-style {
-  padding: 20px;
-}*/
+.cross-button::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 16px;
+  left: 15px;
+
+  width: 25px;
+  height: 25px;
+  background: #ffc600 url("../img/sprite-crosses.png") no-repeat;
+  background-position: -10px -10px;
+}
 
 .write-us-form {
   display: flex;
