@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="index-logo">
+      <div class="site-logo header-logo">
         <a href="#">Device</a>
       </div>
       <div class="container">
@@ -27,11 +27,10 @@
         </div>
         <nav class="main-navigation">
           <ul>
-            <li>
+            <li class="dropdown-menu-content">
               <a class="dropdown-menu" href="#">Каталог товаров</a>
               <!-- Выпадающее меню -->
-               <nav class="dropdown-menu-content">
-                 <ul>
+                 <ul class="dropdown-content">
                    <li>
                      <ul>
                        <li><a href="#">Виртуальная реальность</a></li>
@@ -53,7 +52,6 @@
                      </ul>
                    </li>
                  </ul>
-               </nav>
             </li>
             <li class="delivery">
               <a href="#">Доставка</a>
@@ -68,9 +66,9 @@
         </nav>
       </div>
     </header>
-    <div class="slider-background">
-    </div>
-    <section class="slider">
+    <div class="main-slider">
+      <!-- <div class="slider-background"> </div> -->
+      <section class="slider">
 
       <!-- Слайд палки для селфи -->
       <article class="slider-content">
@@ -164,6 +162,7 @@
 
 
     </section>
+    </div>
     <nav class="popular">
       <ul>
         <li>
@@ -307,7 +306,7 @@
         <p class="content-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
         проверить работоспособность покупки. Всякое бывает.</p>
 
-        <div class="cintact-map">
+        <div class="contact-map">
           <img src="img/map-560-222.jpg" width="560" height="222" alt="Карта">
         </div>
 
@@ -317,20 +316,18 @@
     <footer class="main-footer">
       <div class="footer-container">
 
-          <div class="index-logo">
+          <div class="site-logo footer-logo">
             Device
           </div>
           <div class="footer-user-block">
             <a class="login" href="#">Войти</a></li>
-          </div>
-          <div class="footer-shop-activity">
             <a class="compare" href="#">Сравнить</a>
             <a class="basket" href="#">Корзина</a>
           </div>
 
 
         <div class="footer-contacts-navigation">
-          <p>г. Москва, ул. Строителей, 15</p>
+          <p class="adress">г. Москва, ул. Строителей, 15</p>
           <nav class="footer-navigation">
             <ul>
               <li class="delivery">
@@ -344,7 +341,7 @@
               </li>
             </ul>
           </nav>
-          <p>Тел.: +7 (495) 495-95-95</p>
+          <p class="telephone">Тел.: +7 (495) 495-95-95</p>
         </div>
         <section class="footer-social-copyright">
           <div class="social-icons">

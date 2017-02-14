@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="index-logo">
+      <div class="site-logo header-logo">
         <a href="#">Device</a>
       </div>
       <div class="container">
@@ -29,33 +29,29 @@
         </div>
         <nav class="main-navigation">
           <ul>
-            <li>
+            <li class="dropdown-menu-content">
               <a class="dropdown-menu" href="#">Каталог товаров</a>
               <!-- Выпадающее меню -->
-               <nav class="dropdown-menu-content">
-                 <ul>
-                   <li>
-                     <ul>
-                       <li><a href="#">Виртуальная реальность</a></li>
-                       <li><a href="#">Моноподы для селфи</a></li>
-                       <li><a href="#">Экшн-камеры</a></li>
-                     </ul>
-                   </li>
-
-                   <li>
-                     <ul>
-                       <li><a href="#">Фитнесс-браслеты</a></li>
-                       <li><a href="#">Умные часы</a></li>
-                     </ul>
-                   </li>
-
-                   <li>
-                     <ul>
-                       <li><a href="#">Квадрокоптеры</a></li>
-                     </ul>
-                   </li>
-                 </ul>
-               </nav>
+              <ul class="dropdown-content">
+                <li>
+                  <ul>
+                    <li><a href="#">Виртуальная реальность</a></li>
+                    <li><a href="#">Моноподы для селфи</a></li>
+                    <li><a href="#">Экшн-камеры</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="#">Фитнесс-браслеты</a></li>
+                    <li><a href="#">Умные часы</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li><a href="#">Квадрокоптеры</a></li>
+                  </ul>
+                </li>
+              </ul>
             </li>
             <li class="delivery">
               <a href="#">Доставка</a>
@@ -158,7 +154,7 @@
         <div class="catalog-content-result">
 
           <div class="catalog-content-items">
-            <article class="catalog-content-item dropdown-buttons">
+            <article class="catalog-content-item">
               <div class="img-content-item">
                 <img width="360" height="380" alt="Любительская селфи-палка" src="img/item-1.jpg">
               </div>
@@ -171,11 +167,11 @@
               <!-- Выпадающие кнопки "В корзину" и "Добавить к сравнению" -->
               <div class="dropdown-buttons-content">
                 <a class="btn" href="#">В корзину</a>
-                <a href="#">Добавить к сравнению</a>
+                <a class="add-to-compare" href="#">Добавить к сравнению</a>
               </div>
             </article>
 
-            <article class="catalog-content-item dropdown-buttons">
+            <article class="catalog-content-item">
               <div class="img-content-item">
                 <img width="360" height="380" alt="Профессиональная селфи-палка " src="img/item-2.jpg">
               </div>
@@ -188,11 +184,11 @@
               <!-- Выпадающие кнопки "В корзину" и "Добавить к сравнению" -->
               <div class="dropdown-buttons-content">
                 <a class="btn" href="#">В корзину</a>
-                <a href="#">Добавить к сравнению</a>
+                <a class="add-to-compare" href="#">Добавить к сравнению</a>
               </div>
             </article>
 
-            <article class="catalog-content-item dropdown-buttons">
+            <article class="catalog-content-item">
               <div class="img-content-item">
                 <img width="360" height="380" alt="Непотопляемая селфи-палка" src="img/item-3.jpg">
               </div>
@@ -206,11 +202,11 @@
               <!-- Выпадающие кнопки "В корзину" и "Добавить к сравнению" -->
               <div class="dropdown-buttons-content">
                 <a class="btn" href="#">В корзину</a>
-                <a href="#">Добавить к сравнению</a>
+                <a class="add-to-compare" href="#">Добавить к сравнению</a>
               </div>
             </article>
 
-            <article class="catalog-content-item dropdown-buttons">
+            <article class="catalog-content-item">
               <div class="img-content-item">
                 <img width="360" height="380" alt="Селфи-палка «Следуй за мной»" src="img/item-4.jpg">
                 <div class="new-item-in-catalog">
@@ -226,7 +222,7 @@
               <!-- Выпадающие кнопки "В корзину" и "Добавить к сравнению" -->
               <div class="dropdown-buttons-content">
                 <a class="btn" href="#">В корзину</a>
-                <a href="#">Добавить к сравнению</a>
+                <a class="add-to-compare" href="#">Добавить к сравнению</a>
               </div>
             </article>
           </div>
@@ -246,13 +242,11 @@
    <!-- ////////// -->
    <footer class="main-footer">
      <div class="footer-container">
-         <div class="index-logo">
+         <div class="site-logo footer-logo">
            Device
          </div>
          <div class="footer-user-block">
-           <a class="logout" href="#">Выйти</a></li>
-         </div>
-         <div class="footer-shop-activity">
+           <a class="logout" href="#">Выйти</a>
            <a class="compare" href="#">Сравнить</a>
            <a class="basket" href="#">Корзина</a>
          </div>
