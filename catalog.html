@@ -91,37 +91,61 @@
         </div>
         <div class="filter-contant">
           <form class="catalog-filters">
-            <fieldset class="price-range-filter">
-                <legend>Стоимость</legend>
-                  <input type="range" min="0" max="10000" value="5000">
-              </fieldset>
-            <fieldset class="color-filter">
-                <legend>Цвет</legend>
+            <div class="range-filter">
+              <span class="sub-filter-title">Стоимость</span>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+              </div>
+            </div>
+            <div class="color-filter">
+                <span class="sub-filter-title">Цвет</span>
                   <label>
-                    <input type="checkbox" checked>Черный
+                    <input class="checkbox" type="checkbox" checked>
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Черный</span>
                   </label>
                   <label>
-                    <input type="checkbox">Белый
+                    <input class="checkbox" type="checkbox">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Белый</span>
                   </label>
                   <label>
-                    <input type="checkbox" checked>Синий
+                    <input class="checkbox" type="checkbox" checked>
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Синий</span>
                   </label>
                   <label>
-                    <input type="checkbox" checked>Красный
+                    <input class="checkbox" type="checkbox" checked>
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Красный</span>
                   </label>
                   <label>
-                    <input type="checkbox" checked>Розовый
+                    <input class="checkbox" type="checkbox" checked>
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Розовый</span>
                   </label>
-              </fieldset>
-            <fieldset class="bluetooth-filter">
-                <legend>Bluetooth</legend>
+            </div>
+            <div class="bluetooth-filter">
+                <span class="sub-filter-title">Bluetooth</span>
                   <label>
-                    <input type="radio" value="true">Есть
+                    <input class="radio" type="radio" checked>
+                    <span class="radio-custom"></span>
+                    <span class="label">Есть</span>
                   </label>
                   <label>
-                    <input type="radio" value="false">Нет
+                    <input class="radio" type="radio">
+                    <span class="radio-custom"></span>
+                    <span class="label">Нет</span>
                   </label>
-              </fieldset>
+            </div>
             <button class="btn" type="submit">Показать</button>
           </form>
         </div>

@@ -1,28 +1,28 @@
 @font-face {
     font-family: "Gilroy";
     font-weight: bold;
-    src: url(../fonts/gilroyextrabold.woff) format('woff');
-    src: url(../fonts/gilroyextrabold.woff2) format('woff2');
+    src: url(../fonts/gilroyextrabold.woff) format("woff"),
+         url(../fonts/gilroyextrabold.woff2) format("woff2");
 }
 
 @font-face {
     font-family: "Gilroy";
     font-weight: 300;
-    src: url(../fonts/gilroylight.woff) format('woff');
-    src: url(../fonts/gilroylight.woff2) format('woff2');
+    src: url(../fonts/gilroylight.woff) format("woff"),
+         url(../fonts/gilroylight.woff2) format("woff2");
 }
 
 @font-face {
     font-family: "Open Sans";
-    src: url(../fonts/opensans.woff) format('woff');
-    src: url(../fonts/opensans.woff2) format('woff2');
+    src: url(../fonts/opensans.woff) format("woff"),
+         url(../fonts/opensans.woff2) format("woff2");
 }
 
 @font-face {
     font-family: "Open Sans";
     font-weight: 300;
-    src: url(../fonts/opensanslight.woff) format('woff');
-    src: url(../fonts/opensanslight.woff2) format('woff2');
+    src: url(../fonts/opensanslight.woff) format("woff"),
+         url(../fonts/opensanslight.woff2) format("woff2");
 }
 
 body {
@@ -122,6 +122,13 @@ body {
   line-height: 36px;
   color: #000000;
 }
+
+/* Оживляем поиск */
+
+.main-header-search:hover {
+
+}
+
 
 .user-block {
   position: relative;
@@ -240,19 +247,23 @@ body {
 
 }
 
-.main-navigation .menu-navigation {
+/*.main-navigation .menu-navigation {
   margin-top: 55px;
   margin-bottom: 0;
   padding: 0;
-}
+}*/
 
 .main-navigation li {
   display: inline-block;
   position: relative;
 }
 
+.main-navigation .delivery {
+  margin-left: auto;
+}
+
 .main-navigation .warranty {
-  margin-left: 30px;
+  margin-left: 45px;
 }
 
 .main-navigation .contacts {
@@ -261,6 +272,7 @@ body {
 
 
 .main-navigation > ul {
+  display: flex;
   font-size: 18px;
   font-family: "Gilroy";
   font-weight: 800;
@@ -279,7 +291,6 @@ li > a {
 
 
 .dropdown-menu-content {
-  width: 525px;
   position: relative;
   padding-bottom: 55px;
 }
@@ -320,7 +331,7 @@ li > a {
   content: "";
   position: absolute;
   top: 2px;
-  left: 220px;
+  right: -30px;
 
   width: 16px;
   height: 16px;
@@ -1113,22 +1124,24 @@ li > a {
 
 a.less-to-more {
   display: inline-block;
+  vertical-align: middle;
   font-size: 0px;
   width: 19px;
   height: 19px;
   background: url("../img/spritesheet.png") no-repeat;
-  background-position: -443px -1px;
+  background-position: -443px -5px;
   cursor: pointer;
   opacity: 0.3;
 }
 
 a.more-to-less  {
   display: inline-block;
+  vertical-align: middle;
   font-size: 0px;
   width: 19px;
   height: 19px;
   background: url("../img/spritesheet.png") no-repeat;
-  background-position: -406px -10px;
+  background-position: -406px -5px;
   cursor: pointer;
 }
 
@@ -1151,25 +1164,185 @@ a.more-to-less  {
   margin-right: 68px;
 }
 
-.catalog-filters label {
+/*.catalog-filters label {
   display: block;
-  margin-top: 17px;
-}
+  margin-top: 5px;
+}*/
 
 .catalog-filters .btn {
   margin-top: 50px;
 }
 
-.price-range-filter {
+/*======= RANGE ====== */
+
+.range-filter {
+  width: 200px;
   margin-top: 70px;
+  border-top: 3px solid #000000;
+  padding: 0;
 }
+
+.sub-filter-title {
+  display: block;
+  font-size: 18px;
+  font-family: "Gilroy";
+  font-weight: 800;
+  padding-top: 16px;
+}
+
+.range-controls {
+  position: relative;
+  padding-top: 17px;
+  margin-top: 25px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #dcdcdc;
+}
+
+.range-controls .bar {
+  width: 60%;
+  height: 2px;
+  background: #72ca00;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 9px;
+  left: 0px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  background: #f0f0f0;
+  z-index: 10;
+}
+
+.range-controls .toggle-max {
+  left: 112px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Gilroy';
+  color: #000000;
+  margin-top: 5px;
+  width: 45%;
+  opacity: 0.2;
+}
+
+.price-controls input {
+  font-family: 'Gilroy';
+  font-size: 14px;
+  line-height: 22px;
+  width: 50px;
+  padding: 8px 0;
+  color: #000000;
+  border: none;
+  background: #efefef;
+  opacity: 0.9;
+}
+
+/*======= Color Filter ====== */
 
 .color-filter {
   margin-top: 40px;
+  border-top: 3px solid #000000;
 }
 
+.color-filter label {
+  display: block;
+  margin-top: 18px;
+}
+
+.color-filter .sub-filter-title {
+  padding-bottom: 12px;
+}
+
+/* Стилизация чекбоксов */
+.checkbox {
+  display: none;
+}
+
+.checkbox-custom {
+  position: relative;
+  width: 23px;
+  height: 23px;
+  background-color: #dcdcdc;
+}
+
+.checkbox-custom,
+.label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+
+  top: 8px;
+  left: 5px;
+
+  width: 12px;
+  height: 7px;
+  background: #dcdcdc url("../img/sprite-crosses.png") no-repeat;
+  background-position: -89px -10px;
+}
+
+.label {
+  margin-left: 18px;
+}
+
+/* Стилизация радио-батон */
 .bluetooth-filter {
   margin-top: 40px;
+  border-top: 3px solid #000000;
+}
+
+.bluetooth-filter label {
+  display: block;
+  margin-top: 18px;
+}
+
+.radio {
+  display: none;
+}
+
+.radio-custom {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 23px;
+  height: 23px;
+  background-color: #f0f0f0;
+  border: 2px solid #c7c7c7;
+  border-radius: 50%;
+}
+
+.radio:checked + .radio-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+
+  top: 6px;
+  left: 6px;
+  right: 5px;
+  bottom: 5px;
+
+  width: 7px;
+  height: 7px;
+  background-color: #f0f0f0;
+  border: 2px solid #000;
+  border-radius: 50%;
 }
 
 .catalog-content-result {
@@ -1206,7 +1379,9 @@ a.more-to-less  {
   display: none;
   position: absolute;
   width: 360px;
-  top: 180px;
+  top: 50%;
+  transform: translateY(-30%);
+  right: 0;
 }
 
 .dropdown-buttons-content .btn {
