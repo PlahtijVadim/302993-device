@@ -71,7 +71,9 @@
       </div>
     </header>
     <div class="main-slider">
-      <div class="slider-background"> </div>
+      <div class="slider-background">
+        <span class="line-block"></span>
+      </div>
       <section class="slider">
         <input type="radio" id="btn-1" name="toggle" checked>
         <input type="radio" id="btn-2" name="toggle">
@@ -224,51 +226,58 @@
       </ul>
     </nav>
     <div class="services">
-      <nav class="services-slide-navigation">
-        <button class="btn" type="button">Доставка</button>
-        <button class="btn" type="button">Гарантия</button>
-        <button class="btn" type="button">Кредит</button>
-      </nav>
+      <div class="services-container">
+        <nav class="services-slide-navigation">
+          <button class="btn checked" type="button">Доставка</button>
+          <button class="btn" type="button">Гарантия</button>
+          <button class="btn" type="button">Кредит</button>
+        </nav>
 
-      <section class="services-slider">
-        <article class="services-slider-content">
-          <div class="services-slider-description">
-            <h2 class="content-title">Доставка</h2>
-            <p class="content-text">Мы с удовольствием доставим ваш товар прямо к вашему
-              подъезду совершенно бесплатно! Ведь мы неплохо
-              заработаем, поднимая его на ваш этаж.
-            </p>
-          </div>
+        <section class="services-slider">
+          <article class="services-slider-content">
+            <div class="services-slider-description">
+              <h2 class="content-title">Доставка</h2>
 
-          <div class="services-slider-img">
-            <img width="136" height="164" src="img/delivery-136-164.png" alt="Доставка">
-          </div>
-        </article>
+              <p class="content-text">Мы с удовольствием доставим ваш товар прямо к вашему
+                подъезду совершенно бесплатно! Ведь мы неплохо
+                заработаем, поднимая его на ваш этаж.
+              </p>
+            </div>
 
-        <article class="services-slider-content">
-          <h2 class="content-title">Гарантия</h2>
-          <p class="content-text">Если из-за возгарания купленного у нас товара у вас сгорит
-            дом - не переживайте, мы выдадим вам новый.<br>
-            Товар, не дом, конечно же.
-          </p>
+            <div class="services-slider-img">
+              <img width="136" height="164" src="img/delivery-136-164.png" alt="Доставка">
+            </div>
+          </article>
 
-          <div class="services-slider-img">
-            <img width="171" height="195" src="img/warranty-171-195.png" alt="Гарантия">
-          </div>
-        </article>
+          <article class="services-slider-content">
+            <div class="services-slider-description">
+              <h2 class="content-title">Гарантия</h2>
 
-        <article class="services-slider-content">
-          <h2 class="content-title">Кредит</h2>
-          <p class="content-text">Залезть в долговую яму стало проще! Кредитные
-            консультанты подберут для вас наиболее выгодные
-            условия кредита. Выгодные для нашего банка, разумеется.
-          </p>
+              <p class="content-text">Если из-за возгарания купленного у нас товара у вас сгорит
+                дом - не переживайте, мы выдадим вам новый.<br>
+                Товар, не дом, конечно же.
+              </p>
+            </div>
+            <div class="services-slider-img">
+              <img width="171" height="195" src="img/warranty-171-195.png" alt="Гарантия">
+            </div>
+          </article>
 
-          <div class="services-slider-img">
-            <img width="156" height="188" src="img/credit-156-188.png" alt="Кредит">
-          </div>
-        </article>
-      </section>
+          <article class="services-slider-content">
+            <div class="services-slider-description">
+              <h2 class="content-title">Кредит</h2>
+
+              <p class="content-text">Залезть в долговую яму стало проще! Кредитные
+                консультанты подберут для вас наиболее выгодные
+                условия кредита. Выгодные для нашего банка, разумеется.
+              </p>
+            </div>
+            <div class="services-slider-img">
+              <img width="156" height="188" src="img/credit-156-188.png" alt="Кредит">
+            </div>
+          </article>
+        </section>
+      </div>
     </div>
     <div class="logotypes">
       <div class="company-logo dji">
@@ -294,6 +303,7 @@
     </div>
     <div class="information">
       <section class="info">
+        <span class="line-block"></span>
         <h2 class="content-title">О нас</h2>
         <p class="content-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в
           каждом из нас</p>
@@ -302,14 +312,21 @@
           работает со многими транспортными компаниями:</p>
 
         <ul>
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
+          <li class="list-item">
+            <span class="list-item-title">Деловые Линии</span>
+          </li>
+          <li class="list-item">
+            <span class="list-item-title">Автотрейдинг</span>
+          </li>
+          <li class="list-item">
+            <span class="list-item-title">ЖелДорЭкспедиция</span>
+          </li>
         </ul>
 
         <a class="btn" href="#">Подробнее о нас</a>
       </section>
       <section class="contact">
+        <span class="line-block"></span>
         <h2 class="content-title">Контакты</h2>
         <p class="content-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
         проверить работоспособность покупки. Всякое бывает.</p>
@@ -352,6 +369,7 @@
           <p class="telephone">Тел.: +7 (495) 495-95-95</p>
         </div>
         <section class="footer-social-copyright">
+          <span class="line-block"></span>
           <div class="social-icons">
             <a class="social-btn facebook-icon" href="#">Фейсбук</a>
             <a class="social-btn instagram-icon" href="#">Инстаграм</a>
@@ -372,17 +390,17 @@
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="name-block">
           <legend>Ваше имя:</legend>
-          <input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+          <input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста" required>
         </div>
 
         <div class="email-block">
           <legend>Ваше e-mail:</legend>
-            <input type="email" name="email" value="" placeholder="Для отправки ответа">
+            <input type="email" name="email" value="" placeholder="Для отправки ответа" required>
         </div>
 
         <div class="text-block">
           <legend>Текст письма:</legend>
-            <textarea>В свободной форме</textarea>
+            <textarea required>В свободной форме</textarea>
         </div>
 
         <button class="btn" type="submit">Отправить</button>
