@@ -14,8 +14,8 @@
       <div class="container">
         <div class="header-user-block">
           <form class="main-header-search" action="https://echo.htmlacademy.ru" method="get">
-            <input type="submit" value="">
-            <input type="search" name="search" placeholder="Поиск по сайту">
+            <input class="search" type="search" name="search" placeholder="Поиск по сайту">
+            <input class="search-btn" type="submit" value="Найти">
           </form>
 
           <div class="user-block">
@@ -53,14 +53,18 @@
                 </li>
               </ul>
             </li>
-            <li class="delivery">
-              <a href="#">Доставка</a>
-            </li>
-            <li class="warranty">
-              <a href="#">Гарантия</a>
-            </li>
-            <li class="contacts">
-              <a href="#">Контакты</a>
+            <li class="header-navigation">
+              <ul>
+                <li class="delivery">
+                  <a href="#">Доставка</a>
+                </li>
+                <li class="warranty">
+                  <a href="#">Гарантия</a>
+                </li>
+                <li class="contacts">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -97,8 +101,12 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+                <div class="toggle toggle-min">
+                  <span class="toggle-point"></span>
+                </div>
+                <div class="toggle toggle-max">
+                  <!-- <span class="toggle-point"></span> -->
+                </div>
               </div>
               <div class="price-controls">
                 <label class="min-price">от <input name="min-price" type="text" value="0"></label>
@@ -136,12 +144,12 @@
             <div class="bluetooth-filter">
                 <span class="sub-filter-title">Bluetooth</span>
                   <label>
-                    <input class="radio" type="radio" checked>
+                    <input class="radio" type="radio" name="bluetooth" checked>
                     <span class="radio-custom"></span>
                     <span class="label">Есть</span>
                   </label>
                   <label>
-                    <input class="radio" type="radio">
+                    <input class="radio" type="radio" name="bluetooth">
                     <span class="radio-custom"></span>
                     <span class="label">Нет</span>
                   </label>
@@ -184,9 +192,9 @@
               </div>
               <div class="title-price-container">
                 <h3 class="item-title"><a href="#">Любительская селфи-палка</a></h3>
-              </div>
-              <div class="item-price">
-                500 руб.
+                <div class="item-price">
+                  500 руб.
+                </div>
               </div>
               <!-- Выпадающие кнопки "В корзину" и "Добавить к сравнению" -->
               <div class="dropdown-buttons-content">
@@ -201,10 +209,11 @@
               </div>
               <div class="title-price-container">
                 <h3 class="item-title"><a href="#">Профессиональная селфи-палка</a></h3>
+                <div class="item-price">
+                  1500 руб.
+                </div>
               </div>
-              <div class="item-price">
-                1500 руб.
-              </div>
+
               <!-- Выпадающие кнопки "В корзину" и "Добавить к сравнению" -->
               <div class="dropdown-buttons-content">
                 <a class="btn" href="#">В корзину</a>
@@ -239,10 +248,11 @@
               </div>
               <div class="title-price-container">
                 <h3 class="item-title"><a href="#">Селфи-палка «Следуй за мной»</a></h3>
+                <div class="item-price">
+                  4900 руб.
+                </div>
               </div>
-              <div class="item-price">
-                4900 руб.
-              </div>
+
               <!-- Выпадающие кнопки "В корзину" и "Добавить к сравнению" -->
               <div class="dropdown-buttons-content">
                 <a class="btn" href="#">В корзину</a>
@@ -252,13 +262,17 @@
           </div>
 
           <div class="catalog-content-nav">
-            <a class="catalog-btn prev" href="#prev">Назад</a>
+            <a class="catalog-btn prev" href="#prev">
+              <span class="btn-title">Назад</span>
+            </a>
             <nav class="catalog-pagination">
               <a class="current">1</a>
               <a href="#">2</a>
               <a href="#">3</a>
             </nav>
-            <a class="catalog-btn next" href="#next">Вперёд</a>
+            <a class="catalog-btn next" href="#next">
+              <span class="btn-title">Вперёд</span>
+            </a>
           </div>
         </div>
       </div>
@@ -267,7 +281,7 @@
    <footer class="main-footer">
      <div class="footer-container">
          <div class="site-logo footer-logo">
-           Device
+           <a href="#">Device</a>
          </div>
          <div class="footer-user-block">
            <a class="logout" href="#">Выйти</a>
