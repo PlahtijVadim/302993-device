@@ -708,6 +708,7 @@ li > a {
   opacity: 0.3;
 }
 
+/* Использую ID не для стилизация, а для работы слайдера */
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
@@ -1418,7 +1419,7 @@ a.twitter-icon {
    ============================= */
 
 .write-us-popup {
-  display: none;
+  display: block;
   position: fixed;
 
   top: 50%;
@@ -1449,6 +1450,7 @@ a.twitter-icon {
 
   width: 54px;
   height: 54px;
+  border: 0;
   border-radius: 26px;
   background-color: #ffc600;
   cursor: pointer;
