@@ -2138,7 +2138,6 @@ a.more-to-less  {
 
 .catalog-btn {
   display: inline-block;
-  width: 160px;
   border: 0;
   line-height: 70px;
   color: #000000;
@@ -2155,7 +2154,9 @@ a.more-to-less  {
 
 .catalog-content-nav .prev,
 .catalog-content-nav .next {
-  text-align: center;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .catalog-pagination {
