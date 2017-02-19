@@ -1733,8 +1733,8 @@ a.more-to-less  {
 
 .range-filter {
   width: 200px;
-  margin-top: 70px;
-  border-top: 3px solid #000000;
+  margin-top: 68px;
+  border-top: 2px solid #000000;
   padding: 0;
 }
 
@@ -1942,11 +1942,11 @@ a.more-to-less  {
 }
 
 .radio-custom:hover {
-  border: 2px solid #c0c0c0;
+  border: 3px solid #c0c0c0;
 }
 
 .radio-custom:focus {
-  border: 2px solid #aeaeae;
+  border: 3px solid #aeaeae;
 }
 
 .radio:checked + .radio-custom::before {
@@ -1960,7 +1960,7 @@ a.more-to-less  {
   width: 5px;
   height: 5px;
   background-color: transparent;
-  border: 3  px solid #000;
+  border: 3px solid #000000;
   border-radius: 50%;
 }
 
