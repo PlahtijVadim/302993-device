@@ -1648,6 +1648,10 @@ a.twitter-icon {
   opacity: 0.3;
 }
 
+.by-price.current {
+  opacity: 1;
+}
+
 .sort-type a:hover {
   opacity: 0.6;
 }
@@ -1671,6 +1675,8 @@ a.twitter-icon {
 .sort-type .more-to-less {
   margin-left: 20px;
 }
+
+
 
 a.less-to-more {
   display: inline-block;
