@@ -127,6 +127,7 @@ body {
 .header-user-block {
   display: flex;
   position: relative;
+  align-items: center;
 }
 
 .main-header-search {
