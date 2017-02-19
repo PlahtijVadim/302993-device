@@ -155,7 +155,7 @@ body {
   border-bottom: 2px solid #000000;
   opacity: 1;
 
-  outline-color: transparent;
+  outline: 1px transparent;
 }
 
 .main-header-search .search:focus + .search-btn {
@@ -188,7 +188,6 @@ body {
   border: 2px solid #000000;
   background-color: transparent;
   box-sizing: border-box;
-  outline: transparent;
   z-index: 10;
 }
 
@@ -1017,7 +1016,6 @@ a:hover > .popular-img {
 
 .info {
   position: relative;
-  width: 500px;
   width: 470px;
 }
 
@@ -1419,8 +1417,17 @@ a.twitter-icon {
    ============================= */
 
 .write-us-popup {
-  display: block;
+  display: none;
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
   width: 960px;
+  background-color: #ffffff;
+  z-index: 1000;
   border: 1px dotted transparent;
   box-shadow: 0px 10px 20px 0px rgba(0, 1, 1, 0.2),
               0px 20px 40px 0px rgba(0, 1, 1, 0.75);
