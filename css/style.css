@@ -1966,7 +1966,7 @@ a.more-to-less  {
 
 .catalog-content-result {
     margin-top: 70px;
-    margin-left: 30px;
+    margin-left: 32px;
     margin-bottom: 70px;
 }
 
@@ -2089,7 +2089,7 @@ a.more-to-less  {
 
 .item-price {
   display: inline-block;
-  padding-left: auto;
+  font-size: 16px;
 }
 
 .catalog-content-nav {
@@ -2105,6 +2105,7 @@ a.more-to-less  {
   letter-spacing: 0.2em;
   background-color: #f0f0f0;
   text-transform: uppercase;
+  margin-top: -10px;
 }
 
 .catalog-pagination a {
@@ -2112,7 +2113,7 @@ a.more-to-less  {
   min-width: 25px;
   text-decoration: none;
   text-align: center;
-  margin: 0 5px;
+  margin: 0 2px;
   opacity: 0.3;
   color: #000000;
 }
