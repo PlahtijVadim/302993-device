@@ -1977,13 +1977,10 @@ a.more-to-less  {
 }
 
 .catalog-content-item {
-  display: flex;
   position: relative;
-  flex-wrap: wrap;
-  justify-content: space-between;
   width: 360px;
   margin-left: 40px;
-  margin-bottom: 45px;
+  margin-bottom: 52px;
   line-height: 18px;
 }
 
@@ -2046,15 +2043,15 @@ a.more-to-less  {
 .new-item-in-catalog {
   display: block;
   position: absolute;
-  top: 23px;
-  right: 20px;
+  top: 30px;
+  right: 25px;
   border: 2px solid #000000;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   box-sizing: border-box;
-  padding-top: 14px;
-  padding-left: 7px;
+  padding-top: 16px;
+  padding-left: 13px;
   opacity: 0.1;
 }
 
