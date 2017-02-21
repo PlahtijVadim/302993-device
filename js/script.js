@@ -1,7 +1,6 @@
 (function() {
-  var writeusOpen = document.querySelector(".js-open-popup");
-
   // Переменный pop-up формы обратной связи
+  var writeusOpen = document.querySelector(".js-open-popup");
   var writeusPopup = document.querySelector(".write-us-popup");
   var writeusClose = writeusPopup.querySelector(".cross-button");
 
@@ -11,7 +10,6 @@
 
   // Переменные pop-up карты
   var mapOpen = document.querySelector(".js-open-map");
-
   var mapPopup = document.querySelector(".map-google");
   var mapClose = mapPopup.querySelector(".cross-button");
 
