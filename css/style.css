@@ -1558,6 +1558,29 @@ a.twitter-icon {
  color: rgba(0, 0, 0, 0.3);
 }
 
+.map-google {
+  display: none;
+  width: 960px;
+  height: 559px;
+
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+  background-color: #ffffff;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+
+  box-shadow: 0px 10px 20px 0px rgba(0, 1, 1, 0.2);
+}
+
+.map-google .cross-button {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  z-index: 1001;
+}
 
 /* Классы для JavaScript */
 
