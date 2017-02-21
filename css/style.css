@@ -270,7 +270,7 @@ body {
   width: 13px;
   height: 20px;
   background: transparent url("../img/spritesheet.png") no-repeat;
-  background-position: -538px -7px;
+  background-position: -571px -7px;
 }
 
 .user-block .username::before {
@@ -282,7 +282,7 @@ body {
   width: 13px;
   height: 20px;
   background: transparent url("../img/spritesheet.png") no-repeat;
-  background-position: -538px -7px;
+  background-position: -571px -7px;
   opacity: 1;
 }
 
@@ -458,8 +458,8 @@ li > a {
 
   width: 16px;
   height: 16px;
-  background: transparent url("../img/sprite-crosses.png") no-repeat;
-  background-position: -53px -10px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -647px -10px;
 }
 
 .dropdown-content ul {
@@ -1070,8 +1070,8 @@ a:hover > .popular-img {
 
   width: 10px;
   height: 10px;
-  background:  url("../img/sprite-crosses.png") no-repeat;
-  background-position: -121px -10px;
+  background:  url("../img/spritesheet.png") no-repeat;
+  background-position: -715px -10px;
   opacity: 0.3;
 }
 
@@ -1200,14 +1200,14 @@ a:hover > .popular-img {
 
   width: 13px;
   height: 20px;
-  background: transparent url("../img/sprite-crosses.png") no-repeat;
-  background-position: -213px -7px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -538px -7px;
 }
 
 .footer-user-block .login:hover::before,
 .footer-user-block .logout:hover::before  {
   background: transparent url("../img/spritesheet.png") no-repeat;
-  background-position: -571px -7px;
+  background-position: -807px -7px;
 }
 
 .footer-user-block .login,
@@ -1226,13 +1226,13 @@ a:hover > .popular-img {
   left: 88px;
   width: 13px;
   height: 10px;
-  background: transparent url("../img/sprite-crosses.png") no-repeat;
-  background-position: -183px -10px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -104px -10px;
 }
 
 .footer-user-block .compare:hover::before {
 background: transparent url("../img/spritesheet.png") no-repeat;
-background-position: -104px -10px;
+background-position: -777px -10px;
 }
 
 .footer-user-block .basket::before {
@@ -1243,13 +1243,13 @@ background-position: -104px -10px;
 
   width: 13px;
   height: 17px;
-  background: transparent url("../img/sprite-crosses.png") no-repeat;
-  background-position: -151px -7px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -42px -7px;
 }
 
 .footer-user-block .basket:hover::before {
   background: transparent url("../img/spritesheet.png") no-repeat;
-  background-position: -42px -7px;
+  background-position: -745px -7px;
 }
 
 /*************************************************************/
@@ -1474,8 +1474,8 @@ a.twitter-icon {
 
   width: 25px;
   height: 25px;
-  background: transparent url("../img/sprite-crosses.png") no-repeat;
-  background-position: -10px -10px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -604px -10px;
 }
 
 .write-us-form {
@@ -1953,8 +1953,8 @@ a.more-to-less  {
 
   width: 12px;
   height: 7px;
-  background: transparent url("../img/sprite-crosses.png") no-repeat;
-  background-position: -89px -10px;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: -683px -10px;
 }
 
 .label {
