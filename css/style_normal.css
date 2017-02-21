@@ -74,6 +74,9 @@ body {
   background-color: #ffffff;
 }
 
+iframe {
+  border: 0;
+}
 /* =============================
             HEADER
 ============================= */
